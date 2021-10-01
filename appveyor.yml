@@ -1,0 +1,16 @@
+image:
+  - Visual Studio 2017
+  - Ubuntu
+build:
+  project: src
+  publish_wap: true
+  verbosity: minimal
+
+for:
+-
+  matrix:
+    only:
+      - image: Ubuntu
+
+  build_script:
+  - echo Ubuntu build script
